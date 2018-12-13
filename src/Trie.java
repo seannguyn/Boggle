@@ -32,7 +32,7 @@ public class Trie {
 			if (word.length() > 1) {
 				children[charPos].addWord(word.substring(1));
 			} else {
-//				this.isWord = true;
+//				this.isWord = true; // A FKIN MISTAKE
 				children[charPos].isWord = true;
 			}
 		}

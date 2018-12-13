@@ -17,7 +17,7 @@ public class DictionaryReader {
 		ArrayList<String> wordList = new ArrayList<>();
 		
 		try {
-			fr = new FileReader("src/dict.txt");
+			fr = new FileReader("/Users/seannguyen/eclipse-workspace/Boggle/src/dict.txt");
 			bf = new BufferedReader(fr);
 			
 			while ((word = bf.readLine()) != null) {
