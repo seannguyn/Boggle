@@ -16,10 +16,14 @@ public class Boggle {
 		TestInput Tester = TestInput.getTester();
 		boolean error = Tester.checkError(args);
 		
-		DFS_Solver dfs_solver = new DFS_Solver();
+//		DFS_Solver dfs_solver = new DFS_Solver();
+//		Dictionary_Solver dictionary_solver = new Dictionary_Solver();
+		DFS_Trie_Solver dfs_trie_solver = new DFS_Trie_Solver();
 		
 		if (!error) {
-			Boggle boggle = new Boggle(args[0], dfs_solver);
+//			Boggle boggle = new Boggle(args[0], dfs_solver);
+//			Boggle boggle = new Boggle(args[0], dictionary_solver);
+			Boggle boggle = new Boggle(args[0], dfs_trie_solver);
 			boggle.solve();
 		}
 		
@@ -35,6 +39,6 @@ public class Boggle {
 			}
 			
 		}
-		System.out.println("count: "+count);
+		System.out.println("count... "+count);
 	}
 }
